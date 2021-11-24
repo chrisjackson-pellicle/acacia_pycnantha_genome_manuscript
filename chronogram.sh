@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-
 ########################################################################################################################
-# Generating a chronogram. Analysis performed with PhyloBayes version 4.1b
+####################   Generating a chronogram. Analysis performed with PhyloBayes version 4.1b   ######################
 ########################################################################################################################
 
 # Fixed topology provided in file `SpeciesTree_rooted.txt`:

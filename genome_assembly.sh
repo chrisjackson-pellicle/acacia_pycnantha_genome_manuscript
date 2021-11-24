@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-
 ########################################################################################################################
 #######################   Genome assembly using NECAT and downstream polishing and processing   ########################
 ########################################################################################################################
-
 
 
 ########################################################################################################################
@@ -118,3 +116,19 @@ ont \
 /usr/local/miniconda3/bin/samtools
 
 
+########################################################################################################################
+# Genome polishing performed on scaffolded, gap-filled assembly performed with Racon version 1.3.3 (2 rounds with
+# filtered, corrected nanopore reads, followed by 2 rounds with filtered R1 Illumina reads; commands as described above.
+########################################################################################################################
+
+
+########################################################################################################################
+# Split any potentially erroneous contig joins introduced by RAILS with Tigmint using Illumina 10X
+# linked-read data output from LongRanger basic; commands as described above.
+########################################################################################################################
+
+
+########################################################################################################################
+# Final scaffold of assembly with ARCS version 1.1.0 using Illumina 10X linked-read data output from LongRanger basic:
+########################################################################################################################
+arcs-make arks draft=${assembly) reads=barcoded t=20 time=1
