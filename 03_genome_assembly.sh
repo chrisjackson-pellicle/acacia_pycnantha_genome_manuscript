@@ -85,7 +85,7 @@ ${output_filename%.fasta}_raconSRr1.fasta
 ########################################################################################################################
 
 # Run Tigmint
-tigmint-make tigmint draft=wtdbg2_polished_r2 reads=barcoded t=20
+tigmint-make tigmint draft=${assembly} reads=barcoded t=20
 
 
 ########################################################################################################################
