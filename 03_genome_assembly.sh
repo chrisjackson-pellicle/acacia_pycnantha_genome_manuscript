@@ -93,8 +93,15 @@ tigmint-make tigmint draft=${assembly} reads=barcoded t=20
 # Illumina shotgun reads and filtered, corrected nanopore reads:
 ########################################################################################################################
 
-# With the following files in the working directory:
-#  - `config.json` (specifying config settings, see Supplementary File S1)
+# Run the Python provided script to produce file <config.json>:
+pd_config.py -s list_of_illumina.txt ${assembly} list_of_nanopore.txt
+
+# Contents of pb.fofn:
+ ~/nanopore_filtered.fastq
+
+# Contents of 10.fofn:
+~/illumina_filtered_R1_paired.fastq.gz
+~/illumina_filtered_R2_paired.fastq.gz
 
 # Run the Python provided script:
 run_purge_dups.py --platform bash config.json /shared/purge_dups/bin acacia
