@@ -25,7 +25,7 @@ samplesize = int(sys.argv[3])
 c = 0
 for i in SeqIO.parse(f, 'fasta'):  # fastq.. whaeva
     c = c + 1
-    print("calculating..", c)
+    print(f'calculating..sequence {i.name}, {c}')
 
     if c <= samplesize:
         shannon = estimate_shannon_entropy(str(i.seq))

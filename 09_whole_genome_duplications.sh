@@ -3,6 +3,9 @@
 ####################################   Whole Genome Duplication analyses   #############################################
 ########################################################################################################################
 
+cjackson@volvox_09:14:47_/media/disk2_12TB/cjackson/36_WholeGenomeDuplication$perl /shared/TransDecoder-TransDecoder-v5.5.0/util/gff3_file_to_proteins.pl
+
+
 bokeh serve &
 
 wgd \

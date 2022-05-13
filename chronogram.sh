@@ -26,6 +26,11 @@ pb -d single_copy_orthologs_85.phy -T SpeciesTree_rooted.txt -cal calibrations.t
 readdiv chain_1
 readdiv chain_2
 
+# Command to compare run stats between chain_1 and chain_2:
+tracecomp chain_1 chain_2
+
+# Command to generate chronogram:
+readdiv -x 7500 chain_1
 
 
 
